@@ -42,10 +42,13 @@
 	padding: 2.5rem 1.5rem 2rem;
 	border-radius: var(--radius);
 	flex-grow: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.2rem;
 }
 
 .timespan {
-	display: block;
 	border: none;
 	background: inherit;
 	color: var(--neutral-blue);
@@ -56,9 +59,9 @@
 
 	font-size: 1.12rem;
 	
-	+ .timespan {
-		margin-top: 1rem;
-	}
+	// + .timespan {
+	// 	margin-top: 1rem;
+	// }
 
 	&.selected {
 		color: #eee;

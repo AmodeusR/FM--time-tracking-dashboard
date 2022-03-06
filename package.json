@@ -16,6 +16,10 @@
     "eslint": "^8.10.0",
     "eslint-plugin-react": "^7.29.3",
     "sass": "^1.49.9",
+    "styled-components": "^5.3.3",
     "vite": "^2.8.0"
-  }
+  },
+	"resolutions": {
+		"styled-components": "^5"
+	}
 }

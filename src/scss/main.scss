@@ -21,8 +21,16 @@ body {
 
 .container {
 	display: grid;
-	min-height: 100vh;
 	justify-content: center;
-	align-items: center;
+	align-content: center;;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+	
+	min-height: 100vh;
+	max-width: min(90%, 50em);
+	margin-inline: auto;
 }
 
+.profile-card {
+	grid-row: 1 / 3;
+}

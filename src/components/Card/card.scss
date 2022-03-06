@@ -1,0 +1,64 @@
+// @use "/src/scss/variables";
+
+.card {
+	position: relative;
+	background: var(--dark-blue);
+	width: min(19rem);
+	padding: 2rem;
+	border-radius: var(--radius);
+
+	&::before {
+		content: url(/src/assets/icon-work.svg);
+		display: block;
+		background: var(--theme-work);
+		position: absolute;
+		border-radius: var(--radius);
+		padding-left: 13rem;
+		overflow: hidden;
+		inset: 0;
+		top: -3rem;
+		// z-index: -1;
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	&__dots {
+		display: flex;
+		align-self: center;
+		color: #BBC0FF;
+		padding: .2rem;
+		margin-right: -.2rem;
+		
+		transition: color 150ms ease-out;
+		cursor: pointer;
+
+		&:hover {
+			color: white;
+		}
+	}
+
+	&__body {
+		font-weight: 300;
+	}
+	
+	&__current-time {
+		margin: 2rem 0 .5rem;
+		font-size: 4rem;
+	}
+
+	&__previous-time {
+		font-size: .9rem;
+		color: var(--pale-blue);
+		font-weight: 400;
+	}
+}

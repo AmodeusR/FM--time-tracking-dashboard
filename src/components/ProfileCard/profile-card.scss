@@ -1,0 +1,66 @@
+// @use "/src/scss/variables";
+
+.profile-card {
+	max-width: 17rem;
+
+}
+.profile-info {
+	position: relative;
+	padding: 1.5rem;
+	background: var(--theme);
+	
+	border-radius: var(--radius);
+	z-index: 3;
+
+	&__picture {
+		max-width: 5rem;
+		border: 3px solid white;
+		border-radius: 50%;
+		margin-bottom: 2rem;
+	}
+
+	&__subtext {
+		font-size: 1rem;
+		color: var(--pale-blue);
+		margin: 0;
+	}
+
+	&__username {
+		margin: 0 0 2rem;
+		font-weight: 300;
+		font-size: 2.5rem;
+	}
+
+}
+
+.timespan-selection {
+	margin-top: -1rem;
+	background: var(--dark-blue);
+	padding: 2.5rem 1.5rem 2rem;
+	border-radius: var(--radius);
+}
+
+.timespan {
+	display: block;
+	border: none;
+	background: inherit;
+	color: var(--pale-blue);
+	padding: .2rem;
+
+	transition: color 150ms ease-out;
+	cursor: pointer;
+
+	font-size: 1.12rem;
+	
+	+ .timespan {
+		margin-top: 1rem;
+	}
+
+	&.selected {
+		color: #eee;
+	}
+
+	&:hover {
+		color: white;
+	}
+}

@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { ProfileCard, Card } from "./components";
 
 function App() {
 	return (
-		<div className="App">
-			<p>oioi</p>
+		<div className="container">
+			{/* <ProfileCard username="Jeremy Robson" /> */}
+			<Card title="Work" currentTime={23} previousTime={8} />
 		</div>
 	);
 }
 
 export default App;
+
+
+  

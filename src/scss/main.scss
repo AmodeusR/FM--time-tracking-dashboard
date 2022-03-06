@@ -1,0 +1,28 @@
+@use "./variables";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	font-size: 1.12rem;
+	color: white;
+	background: var(--darker-blue);
+}
+
+
+.container {
+	display: grid;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+

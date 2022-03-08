@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as var;
 
 *,
 *::before,
@@ -18,7 +18,6 @@ body {
 	background: var(--darker-blue);
 }
 
-
 .container {
 	display: grid;
 	justify-content: center;
@@ -30,9 +29,14 @@ body {
 	max-width: 50em;
 	margin-inline: auto;
 
-	@media (max-width: 78.2em) {
+	@media (max-width: var.$vw-tablet) {
 		grid-template-columns: 1fr 1fr;
 		max-width: 35em;
+	}
+
+	@media (max-width: var.$vw-mobile) {
+		grid-template-columns: 1fr;
+		justify-items: center;
 	}
 }
 

@@ -1,6 +1,5 @@
 :root {
 	--theme: hsl(246, 80%, 60%);
-	
 	--theme-work: hsl(15, 100%, 70%);
 	--theme-play: hsl(195, 74%, 62%);
 	--theme-study: hsl(348, 100%, 68%);
@@ -13,5 +12,11 @@
 	--neutral-blue: hsl(235, 45%, 61%);
 	--pale-blue: hsl(236, 100%, 87%);
 	
+	--default-card-width: 19rem;
+	--mobile-card-width: 20rem;
+	
 	--radius: 1rem;
-	}
+}
+
+$vw-mobile: 41em;
+$vw-tablet: 82em;

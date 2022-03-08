@@ -1,8 +1,9 @@
+@use "/src/scss/variables" as var;
 
 .card {
 	position: relative;
 	background: var(--dark-blue);
-	width: min(19rem);
+	width: var(--default-card-width);
 	padding: 2rem;
 	border-radius: var(--radius);
 	margin-top: 3rem;
@@ -69,15 +70,24 @@
 	}
 }
 
-@keyframes fadeInOut {
-	0%, 100% {
-		opacity: 1;
-	}
-	45%, 55% {
-		opacity: 0;
-	}
-}
+@media (max-width: var.$vw-mobile) {
+	.card {
+		width: min(20rem, 95%);
+		&__body {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: .4rem;
+			gap: 1rem;
+		}
 
-.fade {
-	animation: fadeInOut 2s ease-in;
+		&__current-time {
+			font-size: 2rem;
+			margin: 0;
+		}
+
+		&__previous-time {
+			margin: 0;
+		}
+	}
 }

@@ -32,8 +32,10 @@ const ProfileCard = ({ username, setTimeframe, initialTimeframe }) => {
 					alt="user picture"
 					className="profile-info__picture"
 				/>
-				<p className="profile-info__subtext">Report for</p>
-				<h1 className="profile-info__username">{username}</h1>
+				<div className="username-container">
+					<p className="profile-info__subtext">Report for</p>
+					<h1 className="profile-info__username">{username}</h1>
+				</div>
 			</div>
 			<div className="timeframe-selection" ref={buttonsDiv} onClick={(e) => handleClick(e)}>
 				<button type="button" className="timeframe">

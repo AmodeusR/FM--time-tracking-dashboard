@@ -11,13 +11,13 @@ function App() {
 	
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = axios.get("http://localhost:3004/data");
+			const response = axios.get("/db/data.json");
 			const data = (await response).data;
 
 			setCardData(data);
 		};
-		fetchData();
 
+		fetchData();
 
 		// Set Last timeframe data;
 		const lastTimeframe =

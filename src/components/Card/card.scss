@@ -54,16 +54,30 @@
 
 	&__body {
 		font-weight: 300;
+
 	}
 	
 	&__current-time {
 		margin: 2rem 0 .5rem;
 		font-size: 3.5rem;
 	}
-
+	
 	&__previous-time {
 		font-size: .9rem;
 		color: var(--pale-blue);
 		font-weight: 400;
 	}
+}
+
+@keyframes fadeInOut {
+	0%, 100% {
+		opacity: 1;
+	}
+	45%, 55% {
+		opacity: 0;
+	}
+}
+
+.fade {
+	animation: fadeInOut 2s ease-in;
 }

@@ -1,9 +1,7 @@
-// @use "/src/scss/variables";
-
 .profile-card {
 	display: flex;
 	flex-direction: column;
-	width: 17rem;
+	width: 19rem;
 }
 
 .profile-info {
@@ -36,7 +34,7 @@
 	
 }
 
-.timespan-selection {
+.timeframe-selection {
 	margin-top: -1rem;
 	background: var(--dark-blue);
 	padding: 2.5rem 1.5rem 2rem;
@@ -48,7 +46,7 @@
 	gap: 1.2rem;
 }
 
-.timespan {
+.timeframe {
 	border: none;
 	background: inherit;
 	color: var(--neutral-blue);
@@ -58,10 +56,6 @@
 	cursor: pointer;
 
 	font-size: 1.12rem;
-	
-	// + .timespan {
-	// 	margin-top: 1rem;
-	// }
 
 	&.selected {
 		color: #eee;

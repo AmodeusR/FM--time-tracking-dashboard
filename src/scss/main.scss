@@ -27,8 +27,13 @@ body {
 	gap: 1.5rem;
 	
 	min-height: 100vh;
-	max-width: min(90%, 50em);
-	margin-inline: auto;	
+	max-width: 50em;
+	margin-inline: auto;
+
+	@media (max-width: 78.2em) {
+		grid-template-columns: 1fr 1fr;
+		max-width: 35em;
+	}
 }
 
 .profile-card {

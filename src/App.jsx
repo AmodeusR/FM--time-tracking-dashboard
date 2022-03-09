@@ -15,7 +15,7 @@ function App() {
 				const response = axios.get("/db/data.json");
 				const data = (await response).data;
 
-				setCardData(data);
+				setCardData(data.data);
 			}	catch (err) {
 				// Ideally, we should make a useState to setFetchError,
 				// and conditionally render either the content of something related

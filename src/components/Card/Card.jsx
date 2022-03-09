@@ -1,16 +1,15 @@
 import "./card.scss";
 import IconDots from "../IconDots";
-import styled from "styled-components";
+import CardArt from "../../styles/styled-components";
+
+
 
 const card = ({ title, currentTime, previousTime, icon, lastTimeframe, cardBody }) => {
 	const iconRef = icon.match(/(?<=icon-)([\s\S]*)[^.svg]/)[0];
-	const CardArt = styled.div`
-		background: var(--theme-${iconRef});
-	`;
 
 	return (
 		<div className="card">
-			<CardArt className="card__art">
+			<CardArt iconRef={iconRef} className="card__art">
 				<img src={icon} alt="" />
 			</CardArt>
 			<div className="card__header">
@@ -27,5 +26,6 @@ const card = ({ title, currentTime, previousTime, icon, lastTimeframe, cardBody 
 		</div>
 	);
 };
+
 
 export default card;

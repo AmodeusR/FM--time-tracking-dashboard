@@ -14,6 +14,8 @@ function App() {
 			try {
 				const response = axios.get("../db/data.json");
 				const data = (await response).data;
+				console.log(data);
+				console.log(data.data);
 
 				setCardData(data.data);
 			}	catch (err) {

@@ -12,7 +12,7 @@ function App() {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = axios.get("/db/data.json");
+				const response = axios.get("../db/data.json");
 				const data = (await response).data;
 
 				setCardData(data.data);

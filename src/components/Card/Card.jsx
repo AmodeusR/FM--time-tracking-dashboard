@@ -2,8 +2,6 @@ import "./card.scss";
 import IconDots from "../IconDots";
 import CardArt from "../../styles/styled-components";
 
-
-
 const card = ({ title, currentTime, previousTime, icon, lastTimeframe, cardBody }) => {
 	const iconRef = icon.match(/(?<=icon-)([\s\S]*)[^.svg]/)[0];
 

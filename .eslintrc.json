@@ -21,7 +21,7 @@
     "rules": {
         "indent": [
             "error",
-            "tab"
+            2
         ],
         "linebreak-style": [
             "error",
@@ -36,5 +36,10 @@
             "always"
         ],
 				"react/prop-types": 0
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
     }
 }

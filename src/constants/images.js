@@ -7,11 +7,11 @@ import work from "../assets/icon-work.svg";
 import userPicture from "../assets/image-jeremy.png";
 
 export default {
-	exercise,
-	play,
-	selfcare,
-	social,
-	study,
-	work,
-	userPicture,
+  exercise,
+  play,
+  selfcare,
+  social,
+  study,
+  work,
+  userPicture,
 };

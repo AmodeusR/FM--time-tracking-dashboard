@@ -10,8 +10,7 @@
   "dependencies": {
     "axios": "^0.26.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
@@ -19,8 +18,5 @@
     "eslint-plugin-react": "^7.29.3",
     "sass": "^1.49.9",
     "vite": "^2.8.0"
-  },
-  "resolutions": {
-    "styled-components": "^5"
   }
 }

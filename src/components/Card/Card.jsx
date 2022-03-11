@@ -7,7 +7,7 @@ const card = ({ title, currentTime, previousTime, icon, lastTimeframe, cardBody 
 
 	return (
 		<div className="card">
-			<CardArt iconRef={iconRef} className="card__art">
+			<CardArt iconRef={iconRef} className="card__art" bgcolor="green">
 				<img src={icon} alt="" />
 			</CardArt>
 			<div className="card__header">

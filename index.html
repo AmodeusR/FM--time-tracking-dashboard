@@ -8,6 +8,20 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Activities Dashboard</title>
+    <script type="text/javascript">
+    var observer = new MutationObserver(function(mutations) {
+      for(const mutation of mutations) {
+        if (mutation.addedNodes[0].outerHTML?.startsWith('<style')) {
+          console.log(mutation.addedNodes[0].outerHTML);
+          debugger;
+        }
+      }
+    });
+
+    observer.observe(document, {
+      attributes: false, childList: true, characterData: false, subtree: true
+    });
+    </script>
   </head>
   <body>
     <div id="root"></div>

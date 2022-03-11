@@ -11,8 +11,11 @@
     <script type="text/javascript">
     var observer = new MutationObserver(function(mutations) {
       for(const mutation of mutations) {
-        if (mutation.addedNodes[0].outerHTML?.startsWith('<style')) {
-          console.log(mutation.addedNodes[0].outerHTML);
+        let node = mutation.addedNodes[0];
+        if (node.outerHTML?.startsWith('<style')) {
+          console.log(node.outerHTML);
+          const {sheet} = node;
+          console.log(sheet.cssRules);
           debugger;
         }
       }
